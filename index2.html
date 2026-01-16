@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Culture & Places Gallery</title>
+  <style>
+    /* Blinking / Glow effect */
+    .blink {
+      animation: glow 2s infinite; /* 2s cycle, repeats forever */
+    }
+
+    @keyframes glow {
+      0% {
+        opacity: 1;
+        text-shadow: 0 0 5px #38bdf8;
+      }
+      50% {
+        opacity: 0.6;
+        text-shadow: 0 0 15px #38bdf8;
+      }
+      100% {
+        opacity: 1;
+        text-shadow: 0 0 5px #38bdf8;
+      }
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="blink">Culture & Places Gallery</h1>
+
+<p class="subtitle">Explore cartoons, culture, history, and adventure</p>
+
+<!-- FILTER BUTTONS -->
+<div class="filters">
+  <button class="active" data-filter="all">All</button>
+  <button data-filter="cartoon">Cartoons</button>
+  <button data-filter="animals">Animals</button>
+  <button data-filter="food">Food Culture</button>
+  <button data-filter="historical">Historical Places</button>
+  <button data-filter="adventure">Adventure Places</button>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery">
+
+  <!-- CARTOONS -->
+  <div class="card cartoon">
+    <img src="https://upload.wikimedia.org/wikipedia/en/b/bd/Doraemon_character.png">
+    <p>Doraemon</p>
+  </div>
+  <div class="card cartoon">
+    <img src="https://www.pngplay.com/wp-content/uploads/12/Shin-Chan-PNG-Free-File-Download.png">
+    <p>Shinchan</p>
+  </div>
+  <div class="card cartoon">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/Chhota_Bheem.jpg">
+    <p>Chota Bheem</p>
+  </div>
+  <div class="card cartoon">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/f6/Tom_Tom_and_Jerry.png">
+    <p>Tom and Jerry</p>
+  </div>
+
+  <!-- ANIMALS -->
+  <div class="card animals">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/African_elephant_warning_raised_trunk.jpg">
+    <p>Elephant</p>
+  </div>
+  <div class="card animals">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg">
+    <p>Tiger</p>
+  </div>
+  <div class="card animals">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg">
+    <p>Dog</p>
+  </div>
+  <div class="card animals">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg">
+    <p>Cat</p>
+  </div>
+  <div class="card animals">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/American_quarter_horse.jpg/2560px-American_quarter_horse.jpg">
+    <p>Horse</p>
+  </div>
+
+  <!-- FOOD CULTURE -->
+  <div class="card food">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Vada_Pav.jpg/250px-Vada_Pav.jpg">
+    <p>Maharashtrian – Vada Pav</p>
+  </div>
+  <div class="card food">
+    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/misal-pav.webp">
+    <p>Maharashtrian – Misal Pav</p>
+  </div>
+  <div class="card food">
+    <img src="https://png.pngtree.com/png-vector/20241219/ourmid/pngtree-fish-curry-with-red-chilies-and-lemon-slices-png-image_14806280.png">
+    <p>Kokan – Fish Curry</p>
+  </div>
+  <div class="card food">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Tandoorimumbai.jpg">
+    <p>London – Chicken Tikka Masala</p>
+  </div>
+  <div class="card food">
+    <img src="https://www.sanjanafeasts.co.uk/wp-content/uploads/2023/11/Sarson-da-saag-683x1024.jpg.webp">
+    <p>Punjab – Sarson da Saag</p>
+  </div>
+
+  <!-- HISTORICAL -->
+  <div class="card historical">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Raigad_fort_towers.jpg/1200px-Raigad_fort_towers.jpg">
+    <p>Raigad Fort</p>
+  </div>
+  <div class="card historical">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Sinhgad_entrance.jpg/250px-Sinhgad_entrance.jpg">
+    <p>Sinhagad Fort</p>
+  </div>
+  <div class="card historical">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Shivneri_Fort.jpg">
+    <p>Shivneri Fort</p>
+  </div>
+
+  <!-- ADVENTURE -->
+  <div class="card adventure">
+    <img src="https://staybook.in/_next/image?url=https%3A%2F%2Fimages.staybook.in%2Fthings-to-do%2Fimagicaa-skip-the-line-entry-ticket%2F1.jpg&w=1080&q=75">
+    <p>Imagica Theme Park</p>
+  </div>
+  <div class="card adventure">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Court_of_Final_Appeal_Building.jpg/250px-Court_of_Final_Appeal_Building.jpg">
+    <p>Hong Kong</p>
+  </div>
+  <div class="card adventure">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Hyams_Beach%2C_Jervis_Bay%2C_Australia.jpg/330px-Hyams_Beach%2C_Jervis_Bay%2C_Australia.jpg">
+    <p>Beach</p>
+  </div>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox">
+  <span class="close">&times;</span>
+  <span class="prev">&#10094;</span>
+  <img>
+  <span class="next">&#10095;</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
